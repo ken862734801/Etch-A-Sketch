@@ -222,6 +222,13 @@ button{
     max-width:77px;
 }
 input[type="range"]{
-    width:100%;
+    width:75%;
+    margin-left:2px;
+}
+.size-display{
+    width:75%;
+    text-indent:37px;
+    font-size: 1.25em;
+    margin-bottom: 12px;
 }
 
