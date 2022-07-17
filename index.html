@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="style.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Etch-A-Sketch</title>
+    </head>
+    <body>
+        <main>
+            <div class="left-container">
+                <div class ="header">
+                    <div class="title">Etch-A-Sketch</div>
+                    <div class="svg">
+                        <img src="./images/three-dots-svgrepo-com.svg">
+                    </div>
+                </div>
+                <div class="message">
+                    <p>Start drawing <br> your masterpiece!</p>
+                </div>
+                <p class="section-title">Name</p>
+                <div class="name">
+                   <input type="text" placeholder="Untitled">
+                </div>
+                <p class="section-title">Colors</p>
+                <div class="color-container">
+                    <div class="colors">
+                        <button id="red"></button>
+                        <button id="blue"></button>
+                        <button id="yellow"></button>
+                        <button id="orange"></button>
+                        <button id="green"></button>
+                        <button id="purple"></button>
+                        <button id="pink"></button>
+                        <button id="darkred"></button>
+                        <button id="darkblue"></button>
+                        <button id="darkyellow"></button>
+                        <button id="darkorange"></button>
+                        <button id="darkgreen"></button>
+                        <button id="darkpurple"></button>
+                        <button id="darkpink"></button>
+                    </div>
+                    <div class="color-picker">
+                        <input type="color">
+                    </div>
+                </div>
+                <p class="section-title">Tools</p>
+                <div class="toolbar-container">
+                        <div>
+                            <button>
+                                <div class="icon reset"><img src="https://i.imgur.com/lOhoQOw.png"></div>
+                            </button>
+                            <p>Clear</p>
+                        </div>
+                        <div>
+                            <button>
+                                <div class="icon eraser"><img src="https://i.imgur.com/VoSul6m.png"></div> 
+                            </button>
+                            <p>Eraser</p>
+                        </div>
+                        <div>
+                            <button>
+                                <div class="icon rainbow"><img src="https://i.imgur.com/qJN40Ee.png"></div>
+                            </button>
+                            <p>Rainbow</p>
+                        </div>
+                        <div>
+                            <button>
+                                <div class="icon draw"><img src="https://i.imgur.com/291bjdy.png"></div>
+                            </button>
+                            <p>Draw</p>
+                        </div>
+                </div>
+                <p class="section-title">Grid Size</p>
+                <div class="range-container">
+                    <input type="range">
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="grid-container" id="grid-container"></div>
+            </div>
+        </main>
+    </body>
+    <script src="script.js"></script>
+    </html>
