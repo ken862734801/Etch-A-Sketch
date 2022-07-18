@@ -15,7 +15,15 @@ function makeRows(rows, cols){
     gridContainer.style.setProperty("--grid-cols",cols);
     for(i = 0; i < (rows * cols); i++){
         let cell = document.createElement("div");
-        gridContainer.appendChild(cell).className = "grid-item"
+        gridContainer.appendChild(cell).className = "grid-item";
     }
 }
 makeRows(16,16);
+
+
+function sliderValue(){
+    let val = document.getElementById("range").value;
+    console.log(val);
+    let output = document.getElementById("size-display");
+    output.textContent = `${val} x ${val}`;
+}
