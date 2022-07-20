@@ -245,8 +245,7 @@ input[type="range"]:hover{
 @media screen and (max-width:420px) {
     main{
         margin: 0 auto;
-        height:95vh;
-        max-height:840px;
+        height:100vh;
     }
     .left-container{
         width:85%;
