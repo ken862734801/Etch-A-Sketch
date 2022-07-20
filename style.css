@@ -246,7 +246,7 @@ input[type="range"]:hover{
     main{
         margin: 0 auto;
         height:95vh;
-        min-height:800px;
+        max-height:840px;
     }
     .left-container{
         width:85%;
