@@ -256,6 +256,9 @@ input[type="range"]:hover{
         padding-right:12px;
         padding-bottom: 12px;
     }
+    .grid-container{
+        margin-bottom: 12px;
+   }
    #darkred, #darkblue, #darkyellow, #darkorange, #darkgreen, #darkpurple, #black{
     display:none;
    }
