@@ -254,6 +254,7 @@ input[type="range"]:hover{
     .right-container{
         width:85%;
         padding-right:12px;
+        padding-bottom: 10px;
     }
    #darkred, #darkblue, #darkyellow, #darkorange, #darkgreen, #darkpurple, #black{
     display:none;
