@@ -273,7 +273,7 @@ input[type="range"]:hover{
     text-indent:0px;
    }
    .header{
-    margin-bottom:20px;
+    margin-bottom:10px;
    }
    .message{
     display:none;
@@ -281,6 +281,5 @@ input[type="range"]:hover{
    input[type="range"]{
     width:85%;
     margin-left:20px;
-    margin-bottom:10px;
    }
 }
