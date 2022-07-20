@@ -238,3 +238,45 @@ input[type="range"]:hover{
     margin-bottom:10px;
 }
 
+@media screen and (max-width:420px) {
+    main{
+        margin: 0 auto;
+        height:95vh;
+        min-height:800px;
+    }
+    .left-container{
+        width:85%;
+    }
+    .right-container{
+        width:85%;
+        padding-right:12px;
+    }
+   #darkred, #darkblue, #darkyellow, #darkorange, #darkgreen, #darkpurple, #black{
+    display:none;
+   }
+   .color-container{
+    align-items: center;
+   }
+   .color-picker{
+    margin-bottom:12px;
+   }
+   .toolbar-container{
+    padding:6px;
+   }
+   .size-display{
+    width:80%;
+    text-align: center;
+    text-indent:0px;
+   }
+   .header{
+    margin-bottom:20px;
+   }
+   .message{
+    display:none;
+   }
+   input[type="range"]{
+    width:85%;
+    margin-left:20px;
+    margin-bottom:10px;
+   }
+}
