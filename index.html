@@ -18,29 +18,29 @@
                     <p>Start drawing <br> your masterpiece!</p>
                 </div>
                 <p class="section-title">Name</p>
-                <div class="name">
-                   <input type="text" placeholder="Untitled">
+                <div class="name" id="name" style="font-size:1.60em">
+                   <p>Untitled</p>
                 </div>
                 <p class="section-title">Colors</p>
                 <div class="color-container">
                     <div class="colors">
-                        <button id="red"></button>
-                        <button id="blue"></button>
-                        <button id="yellow"></button>
-                        <button id="orange"></button>
-                        <button id="green"></button>
-                        <button id="purple"></button>
-                        <button id="pink"></button>
-                        <button id="darkred"></button>
-                        <button id="darkblue"></button>
-                        <button id="darkyellow"></button>
-                        <button id="darkorange"></button>
-                        <button id="darkgreen"></button>
-                        <button id="darkpurple"></button>
-                        <button id="darkpink"></button>
+                        <button id="red" onclick="colorChanger(red)"></button>
+                        <button id="blue" onclick="colorChanger(blue)"></button>
+                        <button id="yellow" onclick="colorChanger(yellow)"></button>
+                        <button id="orange" onclick="colorChanger(orange)"></button>
+                        <button id="green" onclick="colorChanger(green)"></button>
+                        <button id="purple" onclick="colorChanger(purple)"></button>
+                        <button id="gray" onclick="colorChanger(gray)"></button>
+                        <button id="darkred" onclick="colorChanger(darkred)"></button>
+                        <button id="darkblue" onclick="colorChanger(darkblue)"></button>
+                        <button id="darkyellow" onclick="colorChanger(darkyellow)"></button>
+                        <button id="darkorange" onclick="colorChanger(darkorange)"></button>
+                        <button id="darkgreen" onclick="colorChanger(darkgreen)"></button>
+                        <button id="darkpurple" onclick="colorChanger(darkpurple)"></button>
+                        <button id="black" onclick="colorChanger(black)"></button>
                     </div>
                     <div class="color-picker">
-                        <input type="color">
+                        <input type="color" id="color-selector">
                     </div>
                 </div>
                 <p class="section-title">Tools</p>
@@ -73,7 +73,7 @@
                 <p class="section-title">Grid Size</p>
                 <div class="range-container">
                     <div class="size-display" id="size-display"> 16 x 16</div>
-                    <input type="range" id="range" oninput="sliderValue()" value="16" min="1" max="64">
+                    <input type="range" id="range" oninput="newGrid()" value="16" min="1" max="64">
                 </div>
             </div>
             <div class="right-container">
