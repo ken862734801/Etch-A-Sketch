@@ -1,3 +1,17 @@
+
+let project_name = document.getElementById("name");
+
+project_name.addEventListener("click", nameProject);
+
+function nameProject(){
+    const default_name = project_name.textContent;
+    project_name.textContent = prompt("Name your project.")
+    if(project_name.textContent === "") project_name.textContent = default_name;
+}
+
+
+
+
 function colorChanger(color){
     
     switch(color){
