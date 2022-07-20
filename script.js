@@ -1,16 +1,4 @@
 
-let project_name = document.getElementById("name");
-
-project_name.addEventListener("click", nameProject);
-
-function nameProject(){
-    const default_name = project_name.textContent;
-    project_name.textContent = prompt("Name your project.")
-    if(project_name.textContent === "") project_name.textContent = default_name;
-}
-
-
-
 
 function colorChanger(color){
     
@@ -91,11 +79,25 @@ function colorChanger(color){
 }
 
 
+let project_name = document.getElementById("name");
+
+project_name.addEventListener("click", nameProject);
+
+function nameProject(){
+    const default_name = project_name.textContent;
+    project_name.textContent = prompt("Name your project.")
+    if(project_name.textContent === "") project_name.textContent = default_name;
+}
+
+
+
+
+
 
 
 const gridContainer = document.getElementById("grid-container");
 
-function makeRows(rows, cols){
+function createGrid(rows, cols){
     gridContainer.style.setProperty("--grid-rows", rows);
     gridContainer.style.setProperty("--grid-cols",cols);
     for(i = 0; i < (rows * cols); i++){
@@ -103,12 +105,13 @@ function makeRows(rows, cols){
         gridContainer.appendChild(cell).className = "grid-item";
     }
 }
-makeRows(16,16);
+createGrid(16,16);
 
 
-function sliderValue(){
+
+function newGrid(){
     let val = document.getElementById("range").value;
-    console.log(val);
     let output = document.getElementById("size-display");
     output.textContent = `${val} x ${val}`;
 }
+
