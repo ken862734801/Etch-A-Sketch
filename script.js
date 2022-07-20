@@ -1,10 +1,81 @@
-let red = document.getElementById("red");
-let blue = document.getElementById("blue");
-let yellow = document.getElementById("yellow");
-let orange = document.getElementById("orange");
-let green = document.getElementById("green");
-let purple = document.getElementById("purple");
-let pink = document.getElementById("pink");
+function colorChanger(color){
+    
+    switch(color){
+        case red:
+            document.getElementById("color-selector").value = "#ff0000";
+            console.log("The color is red.");
+            break;
+
+        case blue:
+            document.getElementById("color-selector").value = "#0000ff";
+            console.log("The color is blue.");
+            break;
+
+        case yellow:
+            document.getElementById("color-selector").value = "#ffff00";
+            console.log("The color is yellow.");
+            break;
+
+        case orange:
+            document.getElementById("color-selector").value = "#FFA500";
+            console.log("The color is orange.");
+            break; 
+
+        case green:
+            document.getElementById("color-selector").value = "#008000";
+            console.log("The color is green.");
+            break;
+
+        case purple:
+            document.getElementById("color-selector").value = "#800080";
+            console.log("The color is purple.");
+            break;
+
+        case gray:
+            document.getElementById("color-selector").value = "#808080";
+            console.log("The color is gray.");
+            break;
+
+        case darkred:
+            document.getElementById("color-selector").value = "#8b0000";
+            console.log("The color is dark red.");
+            break;
+
+        case darkblue:
+            document.getElementById("color-selector").value = "#00008b";
+            console.log("The color is dark blue.");
+            break;
+
+        case darkyellow:
+            document.getElementById("color-selector").value = "#caca14";
+            console.log("The color is dark yellow.");
+            break;
+
+        case darkorange:
+        document.getElementById("color-selector").value = "#d17504";
+        console.log("The color is dark orange.");
+        break;
+
+        case darkgreen:
+            document.getElementById("color-selector").value = "#006400";
+            console.log("The color is dark green.");
+            break;
+
+        case darkpurple:
+            document.getElementById("color-selector").value = "#570157";
+            console.log("The color is dark purple.");
+            break;
+
+        case black:
+            document.getElementById("color-selector").value = "#000000";
+            console.log("The color is black.");
+            break;
+
+        default: 
+            break;
+    }
+}
+
 
 
 
