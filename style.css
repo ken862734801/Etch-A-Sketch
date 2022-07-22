@@ -45,7 +45,7 @@ main{
 }
 .grid-item{
     padding:50%;
-  /*  border:1px solid red; */
+  /* border:1px solid red; */
 }
 .header{
     display:flex;
@@ -246,8 +246,8 @@ input[type="range"]:hover{
 @media screen and (max-width:420px) {
     main{
         margin: 0 auto;
-        height:100vh;
-        max-height: 850px;
+        height:95vh;
+        max-height:840px;
     }
     .left-container{
         width:85%;
@@ -256,17 +256,14 @@ input[type="range"]:hover{
         width:85%;
         padding-right:12px;
     }
-    #grid-container{
-        margin-bottom: 30px;
-   }
-   #darkred, #darkblue, #darkyellow, #darkorange, #darkgreen, #darkpurple, #black, #gray{
+   #darkred, #darkblue, #darkyellow, #darkorange, #darkgreen, #darkpurple, #black{
     display:none;
    }
    .color-container{
     align-items: center;
    }
    .color-picker{
-    margin-bottom:8px;
+    margin-bottom:12px;
    }
    .toolbar-container{
     padding:6px;
@@ -277,7 +274,7 @@ input[type="range"]:hover{
     text-indent:0px;
    }
    .header{
-    margin-bottom:10px;
+    margin-bottom:20px;
    }
    .message{
     display:none;
@@ -285,5 +282,6 @@ input[type="range"]:hover{
    input[type="range"]{
     width:85%;
     margin-left:20px;
+    margin-bottom:10px;
    }
 }
