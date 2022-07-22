@@ -1,4 +1,29 @@
+//Function to title project. 
 
+let title = document.getElementById("name");
+title.addEventListener("click", nameProject);
+
+function nameProject(){
+    const defaultTitle = title.textContent;
+    title.textContent = prompt("Name your project.")
+    if(title.textContent === "") title.textContent = defaultTitle;
+}
+
+//Function to create grid.
+
+const gridContainer = document.getElementById("grid-container");
+
+function createGrid(size){
+    gridContainer.style.setProperty("--grid-rows", size);
+    gridContainer.style.setProperty("--grid-cols", size);
+    for(i = 0; i < (size * size); i++){
+        let cell = document.createElement("div");
+        gridContainer.appendChild(cell).className = "grid-item";
+    }
+}
+createGrid(32);
+
+//Function to change color.
 
 function colorChanger(color){
     
@@ -76,42 +101,57 @@ function colorChanger(color){
         default: 
             break;
     }
+};
+
+// Button variables.
+const drawBtn = document.getElementById("draw");
+const rainbowBtn = document.getElementById("rainbow");
+const eraserBtn = document.getElementById("eraser");
+const clearBtn = document.getElementById("clear");
+
+//Coloring function.
+function draw(){
+    gridContainer.addEventListener("mousedown",function(e){
+        down = true;
+        let color = document.getElementById("color-selector").value;
+        if(e.target.className === "grid-item"){
+            e.target.style.backgroundColor = color;
+        }
+        e.preventDefault();
+        console.log(down);
+    });
+    gridContainer.addEventListener("mouseup",function(e){
+        down = false;
+        console.log(down);
+    });
+    gridContainer.addEventListener("mouseover", function(e){
+        let color = document.getElementById("color-selector").value;
+        if (down && e.target.className === "grid-item") {
+            e.target.style.backgroundColor = color;
+          }
+    });
 }
+drawBtn.addEventListener("click", draw);
 
-
-let project_name = document.getElementById("name");
-
-project_name.addEventListener("click", nameProject);
-
-function nameProject(){
-    const default_name = project_name.textContent;
-    project_name.textContent = prompt("Name your project.")
-    if(project_name.textContent === "") project_name.textContent = default_name;
+//Erasing function.
+function erase(){
+    gridContainer.addEventListener("mousedown",function(e){
+        down = true;
+        if(e.target.className === "grid-item"){
+            e.target.style.backgroundColor = "white";
+        }
+        e.preventDefault();
+        console.log(down);
+    });
+    gridContainer.addEventListener("mouseup",function(e){
+        down = false;
+        console.log(down);
+    });
+    gridContainer.addEventListener("mouseover", function(e){
+        if (down && e.target.className === "grid-item") {
+            e.target.style.backgroundColor = "white";
+          }
+    });
 }
-
-
-
-
-
-
-
-const gridContainer = document.getElementById("grid-container");
-
-function createGrid(rows, cols){
-    gridContainer.style.setProperty("--grid-rows", rows);
-    gridContainer.style.setProperty("--grid-cols",cols);
-    for(i = 0; i < (rows * cols); i++){
-        let cell = document.createElement("div");
-        gridContainer.appendChild(cell).className = "grid-item";
-    }
-}
-createGrid(16,16);
-
-
-
-function newGrid(){
-    let val = document.getElementById("range").value;
-    let output = document.getElementById("size-display");
-    output.textContent = `${val} x ${val}`;
-}
+eraserBtn.addEventListener("click", erase);
 
