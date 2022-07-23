@@ -13,7 +13,7 @@ body{
 main{
     display:flex;
     width:55%;
-    min-width:400px;
+    min-width:460px;
     background-color: white;
     border:1px solid #ddd;
     border-radius:16px;
@@ -29,7 +29,7 @@ main{
     width:70%;
     /* border:1px solid green; */
     max-width:600px;
-    min-width:375px;
+    min-width:420px;
 
 }
 #grid-container{
@@ -45,7 +45,7 @@ main{
 }
 .grid-item{
     padding:50%;
-  /* border:1px solid red; */
+    /* border:0.1px solid red; */
 }
 .header{
     display:flex;
@@ -242,12 +242,18 @@ input[type="range"]:hover{
     font-size: 1.25em;
     margin-bottom:10px;
 }
+@media screen and (max-width:1200px) {
+    .left-container{
+        width:75%;
+    }
+}
 
 @media screen and (max-width:420px) {
     main{
         margin: 0 auto;
-        height:95vh;
+        min-height:95vh;
         max-height:840px;
+        max-width:400px;
     }
     .left-container{
         width:85%;
