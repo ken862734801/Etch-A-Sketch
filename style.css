@@ -251,15 +251,17 @@ input[type="range"]:hover{
 @media screen and (max-width:420px) {
     main{
         margin: 0 auto;
-        min-height:95vh;
+        min-height:98vh;
+        min-width:99%;
+        padding-top:35px;
     }
     .right-container{
-        width:80%;
+        min-width:80%;
     }
     .right-container{
         width:100%;
     }
-   #darkred, #darkblue, #darkyellow, #darkorange, #darkgreen, #darkpurple, #black{
+    #orange, #darkorange{
     display:none;
    }
    .color-container{
