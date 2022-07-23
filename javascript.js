@@ -150,6 +150,18 @@ function draw(){
             e.target.style.backgroundColor = color;
           }
     });
+       gridContainer.addEventListener("touchmove",function(e){
+        e.preventDefault();
+        let pointerLocation = e.changedTouches[0];
+        let pointerTarget = document.elementFromPoint(
+          pointerLocation.clientX,
+          pointerLocation.clientY
+        );
+        let color = document.getElementById("color-selector").value;
+        if (pointerTarget.className === "grid-item"){
+            pointerTarget.style.backgroundColor = color;
+        }
+    });
 }
 drawBtn.addEventListener("click", draw);
 
@@ -171,6 +183,17 @@ function erase(){
         if (down && e.target.className === "grid-item") {
             e.target.style.backgroundColor = "white";
           }
+    });
+     gridContainer.addEventListener("touchmove",function(e){
+        e.preventDefault();
+        let pointerLocation = e.changedTouches[0];
+        let pointerTarget = document.elementFromPoint(
+          pointerLocation.clientX,
+          pointerLocation.clientY
+        );
+        if (pointerTarget.className === "grid-item"){
+            pointerTarget.style.backgroundColor = "white";
+        }
     });
 }
 eraserBtn.addEventListener("click", erase);
@@ -196,6 +219,18 @@ function rainbow(){
         if (down && e.target.className === "grid-item") {
             e.target.style.backgroundColor = rainbowColor;
           }
+    });
+     gridContainer.addEventListener("touchmove",function(e){
+        e.preventDefault();
+        let pointerLocation = e.changedTouches[0];
+        let pointerTarget = document.elementFromPoint(
+          pointerLocation.clientX,
+          pointerLocation.clientY
+        );
+        let rainbowColor = `hsl(${Math.random()*360}, 100%, 50%)`;
+        if (pointerTarget.className === "grid-item"){
+            pointerTarget.style.backgroundColor = rainbowColor;
+        }
     });
 }
 rainbowBtn.addEventListener("click", rainbow);
