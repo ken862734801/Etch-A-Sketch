@@ -234,3 +234,15 @@ function rainbow(){
     });
 }
 rainbowBtn.addEventListener("click", rainbow);
+
+//clear function
+
+function clear(){
+    let gridItems = document.getElementsByClassName("grid-item");
+    for (const gridItem of gridItems) {
+        gridItem.style.backgroundColor = 'white';
+      }
+
+}
+clearBtn.addEventListener("click", clear);
+
