@@ -154,3 +154,28 @@ function erase(){
     });
 }
 eraserBtn.addEventListener("click", erase);
+
+//Rainbow color function
+
+function rainbow(){
+    gridContainer.addEventListener("mousedown",function(e){
+        let rainbowColor = `hsl(${Math.random()*360}, 100%, 50%)`;
+        down = true;
+        if(e.target.className === "grid-item"){
+            e.target.style.backgroundColor = rainbowColor;
+        }
+        e.preventDefault();
+        console.log(down);
+    });
+    gridContainer.addEventListener("mouseup",function(e){
+        down = false;
+        console.log(down);
+    });
+    gridContainer.addEventListener("mouseover", function(e){
+        let rainbowColor = `hsl(${Math.random()*360}, 100%, 50%)`;
+        if (down && e.target.className === "grid-item") {
+            e.target.style.backgroundColor = rainbowColor;
+          }
+    });
+}
+rainbowBtn.addEventListener("click", rainbow);
