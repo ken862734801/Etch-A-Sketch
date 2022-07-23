@@ -230,15 +230,16 @@ button{
     max-width:77px;
 }
 input[type="range"]{
-    width:75%;
-    margin-left:2px;
+    width:70%;
+    margin-left:35px;
 }
 input[type="range"]:hover{
     cursor: pointer;
 }
 .size-display{
-    width:75%;
-    text-indent:37px;
+    width:90%;
+    text-align:center;
+    margin-right:42px;
     font-size: 1.25em;
     margin-bottom:10px;
 }
