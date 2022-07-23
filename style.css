@@ -251,16 +251,13 @@ input[type="range"]:hover{
 @media screen and (max-width:420px) {
     main{
         margin: 0 auto;
-        min-height:95vh;
-        max-height:840px;
-        max-width:400px;
-    }
-    .left-container{
-        width:85%;
+        min-height:100vh;
     }
     .right-container{
-        width:85%;
-        padding-right:12px;
+        width:80%;
+    }
+    .right-container{
+        width:100%;
     }
    #darkred, #darkblue, #darkyellow, #darkorange, #darkgreen, #darkpurple, #black{
     display:none;
