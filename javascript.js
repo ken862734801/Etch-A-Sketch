@@ -21,7 +21,27 @@ function createGrid(size){
         gridContainer.appendChild(cell).className = "grid-item";
     }
 }
-createGrid(32);
+document.addEventListener("DOMContentLoaded", createGrid(16));
+
+//Function to empty grid.
+
+let slider = document.getElementById("range");
+
+function clearGrid(){
+    gridContainer.textContent = "";
+}
+
+//Function to create new grid.
+
+function newGrid(){
+    let newSize = slider.value;
+    clearGrid();
+    createGrid(newSize);
+    let sizeDisplay = document.getElementById("size-display");
+    sizeDisplay.textContent = `${newSize} x ${newSize}`;
+}
+
+slider.addEventListener("input", newGrid);
 
 //Function to change color.
 
