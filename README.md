@@ -1,8 +1,5 @@
 # Etch-A-Sketch (WIP)
 
 # Preview
-![Screenshot](Etch-A-Sketch.png)
 
-
-
-![Screenshot](screenshot.png)
+![Alt text](/relative/path/to/Etch-A-Sketch.png?raw=true "Optional Title")
