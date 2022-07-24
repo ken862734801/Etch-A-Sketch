@@ -21,6 +21,8 @@ I plan to revist the project and fix some bugs regarding the creation of a new g
 - Basic touch screen functionality. Gives user ability to draw on mobile devices.
 - Color input gives user access to color palette.
 - Rainbow function produces a randomly generated color for each "pixel" drawn over.
+- Eraser function to clear one "pixel" at a time.
+- Clear function to clear the entire grid.
 - Range input gives user ability to change "pixel" size. 
 
 # Resources
