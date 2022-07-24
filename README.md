@@ -27,7 +27,7 @@ I plan to revist the project and fix some bugs regarding the creation of a new g
 
 # Resources
 
-Stackoverflow and google were my best friends for this project. Initially I wasn't planning on implementing mobile utility; however, coming across one of the past solutions to the assignment, which I will link below, inspired me. I was familiar with the basic events that can be listened for with Javascript, but had never tought about touch events, and in the case of this assignment, the touchmove event. I plan on exploring this events more in the future; however, for now this will do. 
+Stackoverflow and google were my best friends for this project. Initially I wasn't planning on implementing mobile utility; however, coming across one of the past solutions to the assignment, which I will link below, inspired me. I was familiar with the basic events that can be listened for with Javascript, but had never tought about touch events, and in the case of this assignment, the touchmove event. I plan on exploring these events more in the future; however, for now this will do. 
 
 https://github.com/sebastianCastro/etch-a-sketch
 
