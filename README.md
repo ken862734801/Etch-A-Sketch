@@ -1,4 +1,4 @@
 # Etch-A-Sketch (WIP)
 
 # Preview
-(Etch-A-Sketch.png)
+![Screenshot](Etch-A-Sketch.png)
