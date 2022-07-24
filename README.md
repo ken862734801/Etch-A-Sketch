@@ -10,8 +10,10 @@ View on mobile.
 
 # Summary
 
-The goal of this Odin Project assignment was to use utilize Javascript and DOM manipulation to produce the browser equivalent of an etch-a-sketch. 
-[Link to the assignment](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
+The goal of this Odin Project assignment was to use utilize Javascript and DOM manipulation to produce the browser equivalent of an etch-a-sketch.
+
+
+[Link to the assignment.](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
 
 I plan to revist the project and fix some bugs regarding the creation of a new grid, as well, as attempt to make it more clear which mode the program is in but for now I am happy with the result.
 
