@@ -164,6 +164,7 @@ function draw(){
     });
 }
 drawBtn.addEventListener("click", draw);
+document.addEventListener("DOMContentLoaded", draw);
 
 //Erasing function.
 function erase(){
