@@ -3,4 +3,7 @@
 # Preview
 
 ![](images/Etch-A-Sketch.png)
-![View on mobile.](images/Etch-A-Sketch-Mobile.png)
+
+
+<img src="images/Etch-A-Sketch-Mobile.png" width="420" height="896">
+View on mobile.
