@@ -2,4 +2,4 @@
 
 # Preview
 
-![Alt text](/relative/path/to/Etch-A-Sketch.png?raw=true "Optional Title")
+![Alt text](/relative/images/to/Etch-A-Sketch.png?raw=true "Optional Title")
