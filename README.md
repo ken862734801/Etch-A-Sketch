@@ -4,7 +4,7 @@
 https://ken862734801.github.io/Etch-A-Sketch/
 
 # Preview
-<img src="images/Etch-A-Sketch.png">
+<img src="images/Etch-A-Sketch.png" height="500px">
 <img src="images/Etch-A-Sketch-Mobile.png" width="420" height="896">
 View on mobile.
 
