@@ -22,7 +22,7 @@ I plan to revist the project and fix some bugs regarding the creation of a new g
 - Color input gives user access to color palette.
 - Rainbow function produces a randomly generated color for each "pixel" drawn over.
 - Eraser function to clear one "pixel" at a time.
-- Clear function to clear the entire grid.
+- Clear function to reset the grid.
 - Range input gives user ability to change "pixel" size. 
 
 # Resources
