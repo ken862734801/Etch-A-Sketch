@@ -1,6 +1,6 @@
-# Etch-A-Sketch (WIP)
+# Etch-A-Sketch
 
-# Demo
+# Demo (Work in Progress)
 https://ken862734801.github.io/Etch-A-Sketch/
 
 # Preview
