@@ -41,6 +41,7 @@ main{
     border:1.5px solid #ddd;
     border-radius:4px;
     box-shadow: 4px 4px 4px rgb(139, 139, 173);
+    max-height:599px;
 
 }
 .grid-item{
